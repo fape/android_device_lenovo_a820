@@ -20,7 +20,9 @@ BOARD_KERNEL_PAGESIZE := 2048
 # fix this up by examining /proc/mtd on a running device
 BOARD_BOOTIMAGE_PARTITION_SIZE := 6291456
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 6291456
+#fdisk -l /dev/block/mmcblk0p5: Disk /dev/block/mmcblk0p5: 629 MB, 629145600 bytes
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 629145600
+#fdisk -l /dev/block/mmcblk0p7: Disk /dev/block/mmcblk0p7: 713 MB, 713031680 bytes
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 713031680
 BOARD_FLASH_BLOCK_SIZE := 131072
 
