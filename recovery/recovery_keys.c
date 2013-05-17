@@ -34,9 +34,12 @@ int device_handle_key(int key_code, int visible) {
                     return GO_BACK;
                 }
                 break;
+
+            case 172: //home button code 
             case KEY_HOME:
                 return SELECT_ITEM;
-            
+
+            case 139: //menu button code
             case KEY_BACK:
                 if (!ui_root_menu) {
                     return GO_BACK;
