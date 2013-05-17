@@ -5,14 +5,14 @@ on init
     export PATH /sbin
     export ANDROID_ROOT /system
     export ANDROID_DATA /data
-    export EXTERNAL_STORAGE /sdcard
+    export EXTERNAL_STORAGE /external_sd
 
     symlink /system/etc /etc
 
     mkdir /boot
     mkdir /storage
     mkdir /sdcard
-    mkdir /sd-ext
+    mkdir /external_sd
     mkdir /datadata
     mkdir /emmc 
     mkdir /system
@@ -47,7 +47,7 @@ service adbd /sbin/adbd recovery
 # Always start adbd on userdebug and eng builds
 on property:ro.debuggable=1
     write /sys/class/android_usb/android0/enable 0
-    write /sys/class/android_usb/android0/iSerial CWM-LENOVO-820
+    write /sys/class/android_usb/android0/iSerial CWM-LENOVO-A820
     write /sys/class/android_usb/android0/iManufacturer ${ro.product.manufacturer}
     write /sys/class/android_usb/android0/iProduct ${ro.product.model}
 #    write /sys/class/android_usb/android0/idVendor 0BB4  # lenovo.sw : modify lenovo usb vid/pid
