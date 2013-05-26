@@ -14,5 +14,5 @@ $(call inherit-product, device/lenovo/a820/device_a820.mk)
 PRODUCT_DEVICE := a820
 PRODUCT_NAME := cm_a820
 PRODUCT_BRAND := Lenovo
-PRODUCT_MODEL := A820
+PRODUCT_MODEL := Lenovo A820
 PRODUCT_MANUFACTURER := Lenovo
